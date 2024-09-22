@@ -98,7 +98,7 @@ header {
 }
 
 .heroTitle {
-    font-size: 105px;
+    font-size: 120px;
     color: #2B5C42;
     font-weight: 800;
 }
@@ -118,7 +118,7 @@ header {
 }
 
 .heroEnactus {
-    margin-top: 7px;
+    margin-top: 70px;
     font-size: 18px;
     color: #2B5C42;
     padding-left: 5px;
@@ -175,7 +175,7 @@ header {
 
 .partnerLogoContainer {
     display: inline-flex;
-    animation: scroll 10s linear infinite; /* Adjust duration for speed */
+    animation: scroll 15s linear infinite; /* Adjust duration for speed */
 }
 
 .partnerLogo {
@@ -247,10 +247,119 @@ header {
 }
 
 .contactUsButton {
-    padding: 15px 20px;
+    padding: 25px 35px;
     border: 1px solid #2B5C42;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s ease;
-    color: #FFFFFF;
+    color: #2B5C42;
+    background-color: #ffffff;
+    text-align: center;
+    display: block;
+    margin: 35px auto;
+    transition: 0.3s ease;
+    font-size: 30px;
+}
+
+.contactUsButton:hover {
+    background-color: #2B5C42;
+    color: #ffffff;
+}
+
+.enactusTitle {
+    padding: 20px 10%;
+    font-size: 35px;
+    color: #2B5C42;
+    font-weight: 600;
+}
+
+.enactus {
+    background-color: #ffffff;
+    padding: 20px 10%;
+    display: flex;
+    flex-wrap: nowrap; /* Ensure no wrapping */
+    justify-content: center;
+    align-items: top;
+}
+
+.enactusPhoto {
+    flex: 1 1 50%;
+    max-width: 50%;
+    padding-right: 35px;
+}
+
+.enactusPhoto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.enactusTextDiv {
+    flex: 1 1 50%;
+    max-width: 50%;
+    padding: 10px;
+}
+
+.enactusTextDiv h2 {
+    color: #2B5C42;
+    margin: 10px 0; /* Corrected margin */
+    font-size: 25px;
+}
+
+.enactusTextDiv p {
+    color: #2B5C42;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.enactusLink {
+    color: #2B5C42;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.enactusLink:hover {
+    color: #4dac79;
+}
+
+/* Footer styles */
+.footer {
+    padding: 1px 20px;
+    height: 200px;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.footerLogo img {
+    max-width: 180px;
+    vertical-align: middle;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.socialIcons {
+    display: block;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.socialIcon {
+    text-decoration: none;
+    font-size: 38px;
+    margin-right: 15px;
+    color: #2B5C42;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.socialIcon:hover {
+    color: #4dac79;
+    transform: translateY(-5px);
 }
