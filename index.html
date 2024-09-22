@@ -4,8 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terra UBC</title>
+    <link rel="icon" href="/assets/terraIcon.png">
+    <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <script>
+        // This dynamically changes the header background color when scrolling
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            const scrollPosition = window.scrollY;
     
+            // Change the background color after scrolling past a certain point
+            if (scrollPosition > 250) { // Adjust this number to the desired point in the page
+                header.classList.add('navbarScrolled');
+            } else {
+                header.classList.remove('navbarScrolled');
+            }
+        });
+    </script>
+    <!-- Header navbar -->
+    <header>
+        <nav class="navbar">
+            <img src="assets/terraLong.png" class="navbarLogo" alt="Terra Logo">
+            <div class="navLinks">
+                <a class="navbarLink" href="#">ABOUT US</a>
+                <a href="mailto:kevinxygu@gmail.com" class="navbarLink"><button class="contactButton">CONTACT US</button></a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero section -->
+    <div class="hero">
+        <div class="heroText">
+            <h1 class="heroTitle">Terra</h1>
+            <p class="heroSubtitle">A student-run pro-bono sustainability consulting group</p>
+            <p class="heroEnactus">An <a href="https://enactusubc.ca/" target="_blank" class="enactusLink">Enactus UBC</a> project</p>
+        </div>
+    </div>
+
+    <!-- Mission section -->
+    <div class="mission">
+        <h2 class="missionTitle">Our Core Mission</h2>
+        <p class="missionText">Terra is a pro-bono consulting project dedicated to addressing food security and food waste across the Lower Mainland by upcycling and redistributing food waste and introducing sustainable business practices to local restaurants, food retailers, and farms.</p>
+        <p class="missionText">Through our consulting services and partnerships, we upcycle surplus food and redistribute it to those in need. Our on-campus partners serve this food on a by-donation basis or at affordable prices, helping to alleviate food insecurity among students.</p>
+    </div>
+
+    <!-- Partner section -->
+    <div class="partners">
+        <h2 class="partnersTitle">We Work With...</h2>
+        <div class="partnerLogos">
+            <div class="partnerLogoContainer">
+                <img src="assets/EnactusUBCLogo.png" class="partnerLogo" alt="Enactus UBC Logo">
+                <img src="assets/AMSLogo.png" class="partnerLogo" alt="AMS UBC Logo">
+                <img src="assets/UBCLogoLong.png" class="partnerLogo" alt="UBC Logo">
+                <img src="assets/secondHarvest.png" class="partnerLogo" alt="Second Harvest Logo">
+                <img src="assets/greendaleAcres.webp" class="partnerLogo" alt="Greendale Acres Logo">
+                
+                <img src="assets/EnactusUBCLogo.png" class="partnerLogo" alt="Enactus UBC Logo">
+                <img src="assets/AMSLogo.png" class="partnerLogo" alt="AMS UBC Logo">
+                <img src="assets/UBCLogoLong.png" class="partnerLogo" alt="UBC Logo">
+                <img src="assets/secondHarvest.png" class="partnerLogo" alt="Second Harvest Logo">
+                <img src="assets/greendaleAcres.webp" class="partnerLogo" alt="Greendale Acres Logo">
+            </div>
+        </div>
+    </div>
+
+    <!-- Our 3 Pillars -->
+     <div class="pillars">
+        <h2 class="pillarsTitle">Our 3 Pillars</h2>
+        
+        <!-- Pillar 1 -->
+        <div class="pillarContainer">
+            <div class="pillar" style="background-image: url('./assets/1.png')">
+            <h3 class="pillarTitle">CONSULT</h3>
+            <p class="pillarText">ONE LINER ABOUT STUFF AND ETC FOR US TO INCLUDE IT</p>
+            </div>
+        </div> 
+
+         <!-- Pillar 2 -->
+         <div class="pillarContainer">
+            <div class="pillar" style="background-image: url('./assets/2.png')">
+            <h3 class="pillarTitle">DIVERT</h3>
+            <p class="pillarText">ONE LINER ABOUT STUFF AND ETC FOR US TO INCLUDE IT</p>
+            </div>
+        </div> 
+
+         <!-- Pillar 3 -->
+         <div class="pillarContainer">
+            <div class="pillar" style="background-image: url('./assets/3.png')">
+            <h3 class="pillarTitle">FEED</h3>
+            <p class="pillarText">ONE LINER ABOUT STUFF AND ETC FOR US TO INCLUDE IT</p>
+            </div>
+        </div> 
+    </div>
+
+    <!-- Contact us -->
+    <p class="contactUsInfo">Interested in chatting? Email us at <a class="contactEmail" href="mailto:kevinxygu@gmail.com">seeder-email@gmail.com</a></p>
+    <button class="contactUsButton" href="mailto:kevinxygu@gmail.com">CONTACT</button>
+
+
 </body>
 </html>

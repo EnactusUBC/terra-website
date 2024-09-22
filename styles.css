@@ -5,3 +5,252 @@
     padding: 0;
     font-family: 'Montserrat', monospace;
 }
+
+/* Header styles */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: transparent;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3%;
+    background-color: transparent;
+    color: #03503D;
+    transition: 0.3s ease;
+}
+
+.navbarLogo {
+    max-width: 150px;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarLink {
+    padding: 20px;
+    color: #03503D;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.contactButton {
+    padding: 15px 20px;
+    background-color: transparent;
+    border: 1px solid #03503D;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contactButton:hover {
+    background-color: #03503D;
+    color: #FFFFFF;
+}
+
+/* navBar scrolled styles */
+
+.navbarScrolled {
+    background-color:#03503D;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+.navbarScrolled .navbarLink {
+    color: #ffffff;
+}
+
+.navbarScrolled .contactButton {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+/* Hero styles */
+.hero {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('./assets/heroBG.png');
+    margin: 0;
+    padding: 0;
+
+    background-size: cover; /* Scale the background to the width of the div */
+    background-position: center; /* Center the background image horizontally */
+    background-repeat: no-repeat; /* Ensure the background doesn't repeat */
+
+    width: 100%;
+    height: 100vh;
+}
+
+.heroText {
+    max-width: 55%;
+    padding-left: 10%;
+    padding-top: 170px;
+}
+
+.heroTitle {
+    font-size: 105px;
+    color: #2B5C42;
+    font-weight: 800;
+}
+
+.heroSubtitle {
+    font-size: 25px;
+    color: #2B5C42;
+    margin-top: 5px;
+    font-weight: 200;
+    padding-left: 5px;
+}
+
+.heroDetails {
+    font-size: 18px;
+    color: #2B5C42;
+    margin-top: 10px;
+}
+
+.heroEnactus {
+    margin-top: 7px;
+    font-size: 18px;
+    color: #2B5C42;
+    padding-left: 5px;
+    font-weight: 200;
+}
+
+.enactusLink {
+    text-decoration: none;
+    font-weight: 600;
+    color: #2B5C42;
+    position: relative;
+}
+
+.mission {
+    padding-top: 100vh;
+    padding-left: 10%;
+    background-color: #000600;
+    padding-bottom: 120px;
+    margin: 0;
+    max-width: 100%;
+}
+
+.missionTitle {
+    font-size: 35px;
+    color: #FEBE00;
+    font-weight: 600;
+}
+
+.missionText {
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 200;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.partners {
+    background-color: #ffffff;
+    padding: 50px 10%;
+}
+
+.partnersTitle {
+    font-size: 35px;
+    color: #2B5C42;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.partnerLogos {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.partnerLogoContainer {
+    display: inline-flex;
+    animation: scroll 10s linear infinite; /* Adjust duration for speed */
+}
+
+.partnerLogo {
+    max-height: 70px;
+    margin-right: 70px;
+    flex-shrink: 0;
+}
+
+/* Keyframes for scrolling */
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Start at the beginning */
+    }
+    100% {
+        transform: translateX(-50%); /* Scroll the width of one set of logos */
+    }
+}
+
+/* pillars styles */
+.pillars {
+    background-color: #ffffff;
+    padding: 50px 10%;
+}
+
+.pillarsTitle {
+    font-size: 35px;
+    color: #2B5C42;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.pillar {
+    width: 95%;
+    height: 150px;
+    border-radius: 10px;
+    margin: 25px 0px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.pillar:hover {
+    height: 200px;
+}
+
+.pillarTitle {
+    color: #FFFFFF;
+    padding-top: 35px;
+    margin-left: 5%;
+    font-size: 50px;
+}
+
+.pillarText {
+    color: #FFFFFF;
+    margin-left: 5%;
+    margin-top: 5px;
+}
+
+.contactUsInfo {
+    color: #2B5C42;
+    font-weight: 200;
+    font-size: 25px;
+    text-align: center;
+}
+
+.contactEmail {
+    font-weight: 600;
+    text-decoration: none;
+    color: #2B5C42;
+}
+
+.contactUsButton {
+    padding: 15px 20px;
+    border: 1px solid #2B5C42;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: #FFFFFF;
+}
